@@ -1,6 +1,6 @@
 # Banco de Vagas
 
-![CI](https://github.com/JeffrySmith117/teste-desenvolvedor-back-and/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/JeffrySmith117/teste-desenvolvedor-back-end/actions/workflows/ci.yml/badge.svg)
 
 Aplicação web em **Laravel** para cadastro de vagas de emprego e inscrição de candidatos, desenvolvida como teste técnico.
 
@@ -63,8 +63,8 @@ Aplicação web em **Laravel** para cadastro de vagas de emprego e inscrição d
 Pré-requisitos: Docker e Docker Compose.
 
 ```bash
-git clone https://github.com/JeffrySmith117/teste-desenvolvedor-back-and.git
-cd teste-desenvolvedor-back-and
+git clone https://github.com/JeffrySmith117/teste-desenvolvedor-back-end.git
+cd teste-desenvolvedor-back-end
 docker compose up -d --build
 ```
 
