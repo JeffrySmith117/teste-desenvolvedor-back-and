@@ -61,6 +61,18 @@ class CandidateTest extends TestCase
             ->assertViewHas('candidates', fn (LengthAwarePaginator $page) => $page->total() === 2);
     }
 
+    public function test_index_can_be_filtered_by_creation_date(): void
+    {
+        Candidate::factory()->create(['created_at' => now()->subDays(10)]);
+        Candidate::factory()->count(2)->create(['created_at' => now()]);
+
+        $this->get(route('candidates.index', ['created_from' => now()->subDay()->format('Y-m-d')]))
+            ->assertViewHas('candidates', fn (LengthAwarePaginator $page) => $page->total() === 2);
+
+        $this->get(route('candidates.index', ['created_to' => now()->subDays(5)->format('Y-m-d')]))
+            ->assertViewHas('candidates', fn (LengthAwarePaginator $page) => $page->total() === 1);
+    }
+
     public function test_pages_are_displayed(): void
     {
         $candidate = Candidate::factory()->create();

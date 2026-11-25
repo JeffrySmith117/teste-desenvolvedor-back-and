@@ -45,6 +45,14 @@
                 <input type="date" id="f-birth-to" name="birth_date_to" value="{{ request('birth_date_to') }}">
             </div>
             <div class="field">
+                <label for="f-created-from">Cadastrado a partir de</label>
+                <input type="date" id="f-created-from" name="created_from" value="{{ request('created_from') }}">
+            </div>
+            <div class="field">
+                <label for="f-created-to">Cadastrado até</label>
+                <input type="date" id="f-created-to" name="created_to" value="{{ request('created_to') }}">
+            </div>
+            <div class="field">
                 <label for="f-vacancy">Inscrito na vaga</label>
                 <select id="f-vacancy" name="vacancy_id">
                     <option value="">Qualquer</option>

@@ -46,6 +46,16 @@ class CandidateFilter extends QueryFilter
         $this->builder->whereDate('birth_date', '<=', $value);
     }
 
+    public function createdFrom(string $value): void
+    {
+        $this->builder->whereDate('created_at', '>=', $value);
+    }
+
+    public function createdTo(string $value): void
+    {
+        $this->builder->whereDate('created_at', '<=', $value);
+    }
+
     /**
      * Candidatos inscritos em uma vaga específica.
      */

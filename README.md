@@ -177,7 +177,7 @@ Todos via query string, por exemplo: `GET /api/vacancies?contract_type=pj&status
 
 **Vagas:** `id`, `title`, `company`, `location`, `description`, `contract_type` (`clt`, `pj`, `freelancer`), `status` (`open`, `paused`), `salary_min`, `salary_max`, `created_from`, `created_to`
 
-**Candidatos:** `id`, `name`, `email`, `phone`, `linkedin_url`, `summary`, `birth_date_from`, `birth_date_to`, `vacancy_id` (inscritos em uma vaga)
+**Candidatos:** `id`, `name`, `email`, `phone`, `linkedin_url`, `summary`, `birth_date_from`, `birth_date_to`, `created_from`, `created_to`, `vacancy_id` (inscritos em uma vaga)
 
 **Ordenação:** `sort=<coluna>&direction=asc|desc`
 
