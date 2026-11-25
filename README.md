@@ -23,6 +23,16 @@ Aplicação web em **Laravel** para cadastro de vagas de emprego e inscrição d
 - Autenticação de usuário (login, cadastro e logout).
 - Ambiente com Docker (PHP-FPM + Nginx + MySQL).
 
+## Telas
+
+| Login | Lista de vagas com filtros |
+|---|---|
+| ![Login](docs/screenshots/login.png) | ![Vagas](docs/screenshots/vagas.png) |
+
+| Detalhes da vaga | Lista de candidatos |
+|---|---|
+| ![Detalhes da vaga](docs/screenshots/vaga-detalhe.png) | ![Candidatos](docs/screenshots/candidatos.png) |
+
 ## Tecnologias
 
 - PHP 8.3 / Laravel 13
