@@ -1,5 +1,7 @@
 # Banco de Vagas
 
+![CI](https://github.com/JeffrySmith117/teste-desenvolvedor-back-and/actions/workflows/ci.yml/badge.svg)
+
 Aplicação web em **Laravel** para cadastro de vagas de emprego e inscrição de candidatos, desenvolvida como teste técnico.
 
 ## Funcionalidades
@@ -64,7 +66,7 @@ O container instala as dependências, cria o `.env`, gera a chave, roda as migra
 Comandos úteis:
 
 ```bash
-docker compose exec app php artisan test               # roda os testes
+docker compose exec -e DB_CONNECTION=sqlite -e DB_DATABASE=:memory: app php artisan test               # roda os testes
 docker compose exec app php artisan migrate:fresh --seed  # recria o banco
 docker compose down                                    # para os containers
 ```
